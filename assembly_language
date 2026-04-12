@@ -1,0 +1,33 @@
+=>Introduction:
+  Assembly language (in the context of the 8085 microprocessor) is a low-level programming language 
+  used to write programs that directly control the operations of the Intel 8085 microprocessor.
+  Assembly language is a human-readable version of machine language.
+  Instead of writing binary codes like 10101010, we use mnemonics (short words).
+  For example:
+    MOV → Move data
+    ADD → Add
+    SUB → Subtract
+    LDA → Load accumulator
+    These are few commonly used mnemonics.
+=>Key components of 8085 assembly language
+  =>Mnemonics
+    Short instructions (e.g., MOV, ADD, INR)
+  =>Registers
+    Internal storage locations of 8085:
+    A (Accumulator)
+    B, C, D, E, H, L
+  =>Operands
+    Data or registers used in instructions
+    Example: MOV A, B → A and B are operands
+  =>Labels & Addresses
+    Used for jumps and memory locations
+=>Example
+  A = 10
+  B = 20
+  C = A + B
+  
+  MVI A, 0AH   ; Load 10 into A
+  MVI B, 14H   ; Load 20 into B
+  ADD B        ; A = A + B
+  STA 2000H    ; Store result in memory
+  HLT          ; Stop
