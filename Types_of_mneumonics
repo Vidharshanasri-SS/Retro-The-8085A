@@ -3,3 +3,33 @@
 3. Logical	Bit : operations
 4. Branching	Control : program flow
 5. Machine Control	: Control processor
+
+1.Data transfer instruction: 
+  MOV  STA 
+  MVI  LHLD
+  LXI  SHLD
+  LDA  STAX       
+  LDAX  XCHG
+  IN    OUT
+2.Arithmetic operation
+  ADD   ADC   ADI  
+  SUB   SBB   SUI   
+  INR   DCR   ACI
+  INX   DCX   SBI
+  DAD   DAA
+3.Logical operation
+  ANA   ANI
+  ORA   ORI
+  XRA   XRI
+  CMP   CPI
+  CMA
+  CMC   STC
+  RLC   RRC   
+  RAL   RAR
+4.Brancing control
+  JMP   JZ   JNZ   JC   JNC   JP   JM   JPE   JPO
+  CALL  CZ   CNZ   CC   CNC   CP   CM   CPE   CPO
+  RET   RZ   RNZ   RC   RNC   RP   RM   RPE   RPO
+  RST   PCHL
+5.Machine control
+  HLT   NOP   DI   EI   SIM   RIM
