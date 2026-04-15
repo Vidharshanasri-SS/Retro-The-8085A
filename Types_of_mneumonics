@@ -12,7 +12,7 @@
   LDAX  XCHG
   IN    OUT
 2.Arithmetic operation
-  ADD   ADC   ADI  
+  ADD   ADC   ADI   
   SUB   SBB   SUI   
   INR   DCR   ACI
   INX   DCX   SBI
