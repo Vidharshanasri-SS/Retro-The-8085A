@@ -11,7 +11,7 @@
     These are few commonly used mnemonics.
 =>Key components of 8085 assembly language
   =>Mnemonics
-    Short instructions (e.g., MOV, ADD, INR) 
+    Short instructions (e.g., MOV, ADD, INR)  
   =>Registers
     Internal storage locations of 8085:
     A (Accumulator)
