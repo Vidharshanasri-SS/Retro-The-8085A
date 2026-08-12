@@ -1,0 +1,27 @@
+        INP
+        STA A 
+        INP
+        STA B
+        INP
+        STA C
+        LDA A
+        SUB B
+        BRP X
+        LDA A
+        SUB C
+        BRP Y
+        LDA A
+        OUT 
+        HLT
+X       LDA A
+        SUB C
+        BRP Y
+        LDA B
+        OUT
+        HLT 
+Y       LDA C
+        OUT 
+        HLT
+A       DAT 
+B       DAT 
+C       DAT 
