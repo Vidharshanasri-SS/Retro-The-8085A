@@ -1,0 +1,55 @@
+        INP
+        STA A
+        INP 
+        STA B
+        INP
+        STA C
+
+        LDA A
+        SUB B
+        BRP X
+        BRA Y
+
+X       LDA A
+        STA T
+        LDA B
+        STA A
+        LDA T
+        STA B
+
+Y       LDA B
+        SUB C
+        BRP Z
+        BRA CHECK
+
+Z       LDA B
+        STA T
+        LDA C
+        STA B
+        LDA T
+        STA C
+
+CHECK   LDA A
+        SUB B
+        BRP X2
+        BRA OUTPUT
+
+X2      LDA A
+        STA T
+        LDA B
+        STA A
+        LDA T
+        STA B
+
+OUTPUT  LDA A
+        OUT
+        LDA B
+        OUT
+        LDA C
+        OUT 
+        HLT
+
+A       DAT 
+B       DAT 
+C       DAT 
+T       DAT
