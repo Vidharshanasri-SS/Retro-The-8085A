@@ -1,0 +1,26 @@
+// GET 2 NUMBER AND MULTIPLY USING REPITIVE ADDITION
+        INP 
+        STA A
+        INP 
+        STA B
+        LDA A
+        STA DUP
+        LDA B
+        SUB ONE
+        STA B
+LOOP    LDA B
+        SUB ONE 
+        STA B
+        LDA A
+        ADD DUP
+        STA A 
+        LDA B
+        BRZ FIN
+        BRA LOOP
+FIN     LDA A
+        OUT 
+        HLT
+A       DAT
+B       DAT
+DUP     DAT
+ONE     DAT 1
